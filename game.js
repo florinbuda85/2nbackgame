@@ -44,5 +44,5 @@ var goj = {
             goj.score--;
         }
         $("#score").text(goj.score);
-    }  
+    },  
 };
