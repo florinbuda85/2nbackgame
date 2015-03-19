@@ -36,8 +36,13 @@ body {
         }
         
         #score {
-            color: aquamarine;
+            color: white;
             float: bottom;
             margin: 2px;
             position: absolute;
+        }
+        
+        #help {
+            color: aquamarine;
+            margin: 10px;
         }

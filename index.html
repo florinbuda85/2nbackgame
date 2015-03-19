@@ -11,7 +11,7 @@
     
 <body>
     <div id="main">
-        <span id="help"> 1 - position</span>
+        <span id="help"><b>Z</b> - position</span>
         <div id="workspace" align="center">
             <div id="item"></div>
             <div id="item"></div>
@@ -25,7 +25,7 @@
             <div id="item"></div>
             <div id="item"></div>
         </div>
-        <span id="help"> 3 - color</span>
+        <span id="help"><b>M</b> - color</span>
     </div>
     <div id="score"></div>
     <script>
@@ -34,11 +34,11 @@
         goj.start_game();
         
         $(document).keypress(function(event) {
-            if (event.which === 49) { // key 1 - position
+            if (event.which === 122 || event.which === 90) { // key Z - position
                 goj.process_position_key();
                 event.preventDefault();
             }
-            if (event.which === 51) { // key 3 - color
+            if (event.which === 109 || event.which === 77) { // key M - color
                 goj.process_symbol_key();
                 event.preventDefault();
             }
