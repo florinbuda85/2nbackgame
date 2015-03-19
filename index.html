@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
+<script src="game.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+    
+<body>
+    <div id="main">
+        <div id="workspace" align="center">
+            <div id="item"></div>
+            <div id="item"></div>
+            <div id="item"></div>
+            
+            <div id="item"></div>
+            <div id="item"></div>
+            <div id="item"></div>
+            
+            <div id="item"></div>
+            <div id="item"></div>
+            <div id="item"></div>
+        </div>
+    </div>
+    <div id="score"></div>
+    <script>
+    $(document).ready(function(){
+             
+        goj.start_game();
+        
+        $(document).keypress(function(event) {
+            if (event.which === 49) {
+                goj.process_key();
+                event.preventDefault();
+            }
+            if (event.which === 51) {
+                goj.process_key();
+                event.preventDefault();
+            }
+        });
+    });
+    </script>
+    
+</body>
+    
+    
+    
+    
+   <!-- http://www.icons-land.com/ --> 
+</html>
