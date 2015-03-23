@@ -40,6 +40,8 @@ var goj = {
     process_position_key : function() {
         var last = goj.elems_array.length-1;
         
+        if (last < 2) return;
+        
         console.log("[" + goj.elems_array[last].pos + "] [" + goj.elems_array[last-2].pos + "]");
         
         if (goj.elems_array[last].pos == goj.elems_array[last-2].pos) {
@@ -52,6 +54,8 @@ var goj = {
     
     process_symbol_key : function() {
         var last = goj.elems_array.length-1;
+        
+        if (last < 2) return;
         
         console.log("[" + goj.elems_array[last].color + "] [" + goj.elems_array[last-2].color + "]");
         

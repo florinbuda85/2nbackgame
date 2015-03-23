@@ -4,6 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title></title>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js" type="text/javascript"></script>
 <script src="game.js" type="text/javascript"></script>
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
@@ -43,6 +44,10 @@
                 event.preventDefault();
             }
         });
+        
+        //$("help:first").on("tap", goj.process_position_key());
+        $("[id=help]").eq(0).on("tap", goj.process_position_key());
+        
     });
     </script>
     
