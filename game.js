@@ -28,12 +28,14 @@ var goj = {
         
         // all back
         $("[id=item]").css('background-color', '#000000');
+        $("[id=item]").css('border-color', '#F73602');
         
         //create element
         var element = {pos:goj.get_position(), color:goj.get_color()};
         goj.elems_array.push(element);
         
         $("[id=item]").eq(element.pos).css('background-color', element.color);
+        $("[id=item]").eq(element.pos).css('border-color', element.color);
         //console.log("p: " + position);
     },
     

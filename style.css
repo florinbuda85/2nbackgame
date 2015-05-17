@@ -1,3 +1,5 @@
+html, body {margin:0;padding:0;height:100%;}
+
 body {
         background:#000000;
 	margin:0;
@@ -15,25 +17,27 @@ body {
             top: 0;
             position: fixed;
             border: solid 1px #0000ff;
-            
             display: flex;
             align-items: center;
             justify-content: center;
         }
         
         #workspace {
+            float: left;
             width: 370px;
             height: 370px;
+            border-radius: 7px;
             border: solid 1px #F73602;
         }
         
-        #item {
-            float: left;
-            width: 100px;
-            height: 100px;
-            border: solid 1px #F73602;
-            margin: 10px;
-        }
+            #item {
+                border-radius: 7px;
+                float: left;
+                width: 100px;
+                height: 100px;
+                border: solid 1px #F73602;
+                margin: 10px;
+            }
         
         #score {
             color: white;
@@ -43,6 +47,13 @@ body {
         }
         
         #help {
-            color: aquamarine;
-            margin: 10px;
+            background: #161616;
+            margin-right: 10px;
+            margin-left: 10px;
+            height:370px;
+            width: 100px;
+            border-radius: 7px;
+            float: left;
+            align-items: center;
+            justify-content: center;
         }
