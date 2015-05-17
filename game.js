@@ -7,7 +7,7 @@ var goj = {
     
     start_game : function() {
         score = 0;
-        setInterval(this.fill_random_item, 1600);
+        setInterval(this.fill_random_item, 1800);
     },
     
     get_position : function() {
